@@ -19,18 +19,17 @@ class Program
             Console.WriteLine("Enter number: ");
             answer = int.Parse(Console.ReadLine());
             numbers.Add(answer);
-            
-        }
-        List<int> templist = new List<int>();
 
-        foreach(int number in numbers)
+        }
+
+        foreach (int number in numbers)
         {
-            if(number > biggestNumber)
+            if (number > biggestNumber)
             {
                 biggestNumber = number;
             }
             sum = number + sum;
-            if(number < smallestPositiveNumber && number > 0 && number != 0)
+            if (number < smallestPositiveNumber && number > 0 && number != 0)
             {
                 smallestPositiveNumber = number;
             }
@@ -38,7 +37,7 @@ class Program
         numbers.Sort();
         average = sum / numbers.Count();
         Console.WriteLine($"The sum is: {sum}\n The average is : {average}\n The smallest positive number is: {smallestPositiveNumber}\n The sorted list is: ");
-        foreach(int number in numbers)
+        foreach (int number in numbers)
         {
             Console.WriteLine($"{number}");
         }

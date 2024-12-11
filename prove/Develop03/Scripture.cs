@@ -8,7 +8,7 @@ public class Scripture
 
     public Scripture()
     {
-        string[] scriptFile = File.ReadAllLines("scriptures.txt");
+        string[] scriptFile = File.ReadAllLines(@"C:\Users\Micha\Repos\cs210\prove\Develop03\scriptures.txt");
         Random randomScripture = new Random();
         string verseProcessing = scriptFile[randomScripture.Next(0,21)];
         {

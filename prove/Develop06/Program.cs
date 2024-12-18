@@ -4,6 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop06 World!");
+        GoalManager thisRun = new GoalManager();
+        bool endCase = false;
+        do {
+            thisRun.DisplayMenu();
+        } while (endCase != true);
     }
 }
